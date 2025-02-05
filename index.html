@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhangyiming portfoilo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href="css/style.css" />
+    <link rel = "stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/zhangyiming.png" type="image/x-icon" />
     <!-- this part is for the language switcher
     <select id="language-switcher">
@@ -19,21 +21,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="left">
-                <a href="#about-section">zhangyiming</a>
-            </div>
-            <div class="right">
-                <a href="#about-section">About</a>
-                <a href="#skills-section">Skills</a>
-                <a href="#projects-section">projects</a>
-                <a href="#leave-message-section">Leave a Message!</a>
+        <nav class="navbar">
+            <div class="container">
+                <div class="left">
+                    <a href="#about-section">zhangyiming</a>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                        <a href="#about-section">About</a>
+                        </li>
+                        <li>
+                        <a href="#skills-section">Skills</a>
+                        </li>
+                        <li>
+                        <a href="#projects-section">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#leave-message-section">Leave a Message!</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
+<!-- about me section --> 
     <section id = "about-section">
-        <h2> i'm yiming!!</h2>
+        
         <div class="headshot">
             <picture>
                 <img src="images/IMG_6886.JPG" alt="headshot">
@@ -42,10 +56,10 @@
 
         <div class="bio">
             <p>
-                Hey! I'm yiming zhang, a senior majoring in 
+                Hey! I'm yiming zhang, a senior double majoring in 
                 film, TV, digital projection and computer science
                 at Indiana University. I really excited about basically 
-                anything that is related to film, marketing, etc.(idk) 
+                anything that is related to film, marketing, etc.(idk pls change lol) 
             </p>
             <br>
             <p>
@@ -53,10 +67,13 @@
             </p>
         </div>
     </section>
-
+<!-- skills section --> 
     <section id ="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
+        <div class="skillsection">
+            <h2>Skills</h2>
+        </div>
+        
+        <div class="skillscontainer">
             <i class="fa-brands fa-python"></i>
             <i class="fa-brands fa-java"></i>
             <i class="fa-brands fa-swift"></i>
@@ -67,6 +84,15 @@
             <i class="devicon-r-plain"></i>
             <i class="devicon-c-plain-wordmark"></i>
         </div>
+
+        <div class="desgin">
+            <i class="devicon-photoshop-plain"></i> 
+            <i class="devicon-premierepro-plain"></i> 
+            <i class="devicon-aftereffects-plain"></i> 
+            <i class="devicon-davinciresolve-plain"></i> 
+            <i class="devicon-blender-plain"></i>
+            <i class="devicon-maya-plain"></i> 
+        </div>
     </section>
 
     <section id ="proejcts-section">
@@ -74,6 +100,6 @@
 
     </section>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
