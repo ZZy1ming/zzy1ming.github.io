@@ -34,6 +34,7 @@ img {
 .navbar {
     background-color: #a5c9ca;
     padding: 20px;
+    transition: transform 0.4s ease;
 }
 
 .navbar .container {
@@ -102,7 +103,7 @@ img {
 }
 
 .CS i {
-    font-size: 50px;
+    font-size: 40px;
     color: #a5c9ca;
     transition: color 0.3s ease;
 }
@@ -111,7 +112,34 @@ img {
     color: white;
 }
 
+.design {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding: 10px 20px;
+}
 
+.design i {
+    font-size: 40px;
+    color: #a5c9ca;
+    transition: color 0.3s ease;
+}
+
+.design i:hover {
+    color: white;
+}
+
+/* projects */
+.projectsection{
+    padding: 10px;
+}
+
+/* message */
+.messagesection{
+    padding: 10px;
+}
 /* utilities */
 
 .container{
