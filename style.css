@@ -136,6 +136,14 @@ img {
     padding: 10px;
 }
 
+.posters {
+    margin-top: 20px;
+    max-width: 450px;
+    margin:auto;
+    padding:0 15px;
+    justify-content: center; 
+}
+
 /* message */
 .messagesection{
     padding: 10px;
