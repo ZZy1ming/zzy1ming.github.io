@@ -29,6 +29,14 @@ img {
     max-width: 100%;
 }
 
+/* section:nth-of-type(odd) {
+    background-color: #f8f8f8; 
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff; 
+} */
+
 
 /* navbar */
 .navbar {
@@ -90,6 +98,12 @@ img {
 
 /* skills */
 .skillsection {
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
     padding: 10px;
 }
 
@@ -133,15 +147,59 @@ img {
 
 /* projects */
 .projectsection{
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
     padding: 10px;
 }
 
-.posters {
-    margin-top: 20px;
-    max-width: 450px;
+.posters_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.postercontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.left {
+    margin-top: 50px;
+    max-width: 900px;
     margin:auto;
     padding:0 15px;
-    justify-content: center; 
+    gap: 2rem;
+    float: left;
+    flex: 1; 
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.right {
+    margin-top: 50px;
+    max-width: 900px;
+    margin:auto;
+    padding:0 15px;
+    float: right;
+    text-align: right;
+    gap: 2rem;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.continue{
+    margin: 15px;
 }
 
 /* message */
