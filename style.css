@@ -48,6 +48,7 @@ section:nth-of-type(even) {
 .navbar .container {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
 }
 
@@ -182,7 +183,31 @@ section:nth-of-type(even) {
     gap: 2rem;
     float: left;
     flex: 1; 
-    width: 50%;
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+.middleleft {
+    margin-top: 50px;
+    max-width: 900px;
+    margin:auto;
+    padding:0 15px;
+    gap: 2rem;
+    flex: 1; 
+    width: 25%;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.middleright {
+    margin-top: 50px;
+    max-width: 900px;
+    margin:auto;
+    padding:0 15px;
+    gap: 2rem;
+    float: right;
+    flex: 1; 
+    width: 25%;
     flex-wrap: wrap;
 }
 
@@ -191,19 +216,76 @@ section:nth-of-type(even) {
     max-width: 900px;
     margin:auto;
     padding:0 15px;
-    float: right;
-    text-align: right;
     gap: 2rem;
-    width: 50%;
+    float: right;
+    flex: 1; 
+    width: 25%;
     flex-wrap: wrap;
 }
 
-.continue{
-    margin: 15px;
+.products {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
+
+.products img{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.typography{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding: 10px;
+}
+
+.designs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding: 10px;
+}
+
+.shortfilms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding: 10px;
+}
+
+
 
 /* message */
 .messagesection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding: 10px;
+}
+
+.connections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
     padding: 10px;
 }
 /* utilities */
