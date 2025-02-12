@@ -14,6 +14,7 @@ body{
     font-size: 15px;
     line-height: 1.7;
     background: whitesmoke;
+  
 }
 
 a{
@@ -43,23 +44,34 @@ section:nth-of-type(even) {
     background-color: #a5c9ca;
     padding: 20px;
     transition: transform 0.4s ease;
+    position: fixed; /* Make the navbar stick to the top */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
 }
 
 .navbar ul {
     display:flex;
+    margin-left: auto;
 }
 
 .navbar ul a {
-    padding: 10px 20px;
+    padding: 10px;
     display: block;
     font-weight: 600;
+}
+
+.right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul li a:hover {
@@ -70,12 +82,15 @@ section:nth-of-type(even) {
     font-weight: 600;
 }
 
+
+
 /* headshot */
 .headshot img{
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 30px;
-    width: 270px; 
-    height: 270px;
+    width: 300px; 
+    height: 300px;
+    
     object-fit: cover;
     border-radius: 50%; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -84,8 +99,10 @@ section:nth-of-type(even) {
 
 .headshot {
     display: flex;
+    /* justify-content: right; */
     justify-content: center;
     align-items: center;
+
 }
 
 .headshot img:hover{
@@ -94,12 +111,12 @@ section:nth-of-type(even) {
 
 /* introduction */
 .bio{
-    padding: 25px;
+    padding: 50px;
 }
 
 /* skills */
 .skillsection {
-    margin-top: 20px ;
+    margin-top: 100px ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +125,7 @@ section:nth-of-type(even) {
     padding: 10px;
 }
 
-.CS {
+.CS, .design{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -117,34 +134,21 @@ section:nth-of-type(even) {
     padding: 20px;
 }
 
-.CS i {
-    font-size: 40px;
+.design{
+    margin-bottom: 120px;
+}
+
+.CS i, .design i{
+    font-size: 45px;
     color: #a5c9ca;
     transition: color 0.3s ease;
 }
 
-.CS i:hover {
-    color: white;
+.CS i:hover, .design i:hover {
+    color: #2E4052;
+
 }
 
-.design {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px;
-    flex-wrap: wrap; 
-    padding: 10px 20px;
-}
-
-.design i {
-    font-size: 40px;
-    color: #a5c9ca;
-    transition: color 0.3s ease;
-}
-
-.design i:hover {
-    color: white;
-}
 
 /* projects */
 .projectsection{
@@ -276,8 +280,8 @@ section:nth-of-type(even) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px;
-    padding: 10px;
+    padding-top: 120px;
+
 }
 
 .connections{
@@ -286,7 +290,7 @@ section:nth-of-type(even) {
     align-items: center;
     width: 100%;
     padding: 20px;
-    padding: 10px;
+    padding-bottom: 100px;
 }
 /* utilities */
 
@@ -304,4 +308,5 @@ section:nth-of-type(even) {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 97px;
 }
