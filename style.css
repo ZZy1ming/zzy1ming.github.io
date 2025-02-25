@@ -170,207 +170,64 @@ section:nth-of-type(even) {
 
 
 /* projects */
-#projects-section {
+.projectsection {
     width: 100%;
     margin: auto;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2rem;
 }
 
-#projects-section h2 {
-    margin-bottom: 1rem;
-    font-size: 2.75rem;
-    font-weight: 700;
-}
-
-#projects-section h3 {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+.titles{
+    padding-top:50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     text-decoration: underline;
 }
 
-.project-subsection {
+
+.posters-section {
     width: 100%;
     margin-bottom: 4rem; /* Add space between subsections */
 }
 
-.projects-scroll-container {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1600px;
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-    margin: 0 auto;
+
+/* Swiper Container */
+.swiper {
+    width: 90%;
+    height: 400px; /* Set a fixed height for the Swiper container */
+    padding: 20px;
 }
 
-.project-box {
-    flex: 0 0 16rem; /* Fixed width for the boxes */
-    text-align: center;
-    border: 1px solid #d7dbd8;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure the image doesn't overflow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-box:hover {
-    transform: scale(0.95); /* Grow the box slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.project-box img {
+.poster {
     width: 100%;
-    height: 12rem;
-    object-fit: cover;
-    border-radius: 0.25rem;
-    margin-bottom: 0.75rem;
-}
-
-.project-box h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.project-box h5 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.project-box p {
-    font-size: 1rem;
-    font-weight: 300;
-    color: #494a4a;
-}
-/* .projectsection{
-    margin-top: 20px ;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 10px;
 }
 
-.posters_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 10px;
+.swiper-slide img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain; /* Ensures the image fits within the slide */
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
-
-.postercontainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.left {
-    margin-top: 50px;
-    max-width: 900px;
-    margin:auto;
-    padding:0 15px;
-    gap: 2rem;
-    float: left;
-    flex: 1; 
-    width: 25%;
-    flex-wrap: wrap;
-}
-
-.middleleft {
-    margin-top: 50px;
-    max-width: 900px;
-    margin:auto;
-    padding:0 15px;
-    gap: 2rem;
-    flex: 1; 
-    width: 25%;
-    flex-wrap: wrap;
-    float: left;
-}
-
-.middleright {
-    margin-top: 50px;
-    max-width: 900px;
-    margin:auto;
-    padding:0 15px;
-    gap: 2rem;
-    float: right;
-    flex: 1; 
-    width: 25%;
-    flex-wrap: wrap;
-}
-
-.right {
-    margin-top: 50px;
-    max-width: 900px;
-    margin:auto;
-    padding:0 15px;
-    gap: 2rem;
-    float: right;
-    flex: 1; 
-    width: 25%;
-    flex-wrap: wrap;
-}
-
-.products {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-}
-
-.products img{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px;
-    flex-wrap: wrap; 
-    padding: 20px;
-}
-
-.typography{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    padding: 10px;
-}
-
-.designs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    padding: 10px;
-}
-
-.shortfilms{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    padding: 10px;
-} */
-
-
 
 /* message */
 .messagesection{

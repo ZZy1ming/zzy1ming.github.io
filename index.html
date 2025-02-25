@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel = "stylesheet" href="style.css" />
     <link rel="icon" href="./images/zhangyiming.png" type="image/x-icon" />
     <!-- this part is for the language switcher
@@ -96,10 +97,6 @@
                 <i class="devicon-css3-plain"></i>
                 <span class="icon-name">CSS3</span>
             </div>
-            <!-- <div class="icon-box">
-                <i class="fab fa-js-square"></i>
-                <span class="icon-name">JavaScript</span>
-            </div> -->
             <div class="icon-box">
                 <i class="fa-brands fa-github-alt"></i>
                 <span class="icon-name">GitHub</span>
@@ -148,62 +145,43 @@
             <h2>Projects</h2>
         </div>
 
-        <div class="posters_section">
+        <div class="titles">
             <h3>海报设计</h3>
         </div>
-
-        <div class="poster-container">
-            <div #swiperRef="" class="swiper card-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">                      
-                        <picture>
-                            <img src="images/ew1.png" alt="poster1">
-                        </picture>                    
-                    </div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">                      
-                        <picture>
-                            <img src="images/240416.jpg" alt="poster2">
-                        </picture>                    
-                    </div>
-                </div>
-            </div>
-            <div class="left">
-                <picture>  
-                     
+        <!-- posters section --> 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- <a href="images/ew1.png"> -->
                     <img src="images/ew1.png" alt="ecowich 1">  
-                    <img src="images/240416.jpg" alt="poster2"> 
-                    
-                </picture>
-            </div>   
-
-            <div class="middleleft">
-                <picture>   
-                    <img src="images/松鸣营地.jpg" alt="poster4">
-                    <img src="images/1.png" alt="poster6">             
-                </picture>
-            </div>   
-
-            <div class="middleright">
-                <picture>       
-                    <img src="images/重庆义渡.png" alt="poster3">   
+                    <!-- </a> -->
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/240416.jpg" alt="poster2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/松鸣营地.jpg" alt="poster3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/1.png" alt="poster4">  
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/重庆义渡.png" alt="poster5"> 
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/p3.jpg" alt="poster6">   
+                </div>
+                <div class="swiper-slide">
                     <img src="images/ew2.png" alt="poster7">
-                   
-                </picture>
-            </div>   
-            <!-- the right section is at middle right of the screen -->
-            <div class="right">
-                <picture>
-                    <img src="images/p3.jpg" alt="poster3">   
-                    <img src="images/美女1-1.jpg" alt="poster8">
-                </picture>
+                </div>
             </div>
         </div>
+       
     
-         
-        <div class="products">
+        <div class="titles">
             <h3>产品实物产出</h3>
+        </div>
+        <div class="products">
                 <picture>
                     <img src="images/小卡cymk-01.png" alt="poster9">
                 </picture>   
@@ -252,7 +230,22 @@
     
     </section>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+            const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1, // Show 1 slide by default
+            spaceBetween: 20, // Add space between slides
 
+            breakpoints: {
+                768: {
+                    slidesPerView: 2, // Show 2 slides on tablets
+                },
+                1024: {
+                    slidesPerView: 4, // Show 4 slides on desktop
+                },
+            },
+        });
+    </script>
     <script src="main.js"></script>
 
 <!-- all rights reserved -->   
