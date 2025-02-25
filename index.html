@@ -149,7 +149,7 @@
             <h3>海报设计</h3>
         </div>
         <!-- posters section --> 
-        <div class="swiper mySwiper">
+        <div class="verticalSwiper vSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <!-- <a href="images/ew1.png"> -->
@@ -182,27 +182,59 @@
             <h3>产品实物产出</h3>
         </div>
         <div class="products">
+            <div class="xiaoka">
                 <picture>
                     <img src="images/小卡cymk-01.png" alt="poster9">
                 </picture>   
-                <h5>- 草莓音乐节活动小卡 - </h5>
-            
-                <picture>
-                    <img src="images/summerTime.png" alt="poster8">
-                    <img src="images/2.png" alt="poster3"> 
-                </picture>  
-                <h5>- yearbook - </h5>
-                <div class="d">
-                    <picture>
-                        <img src="images/001.jpg" alt="poster9">
-                        <img src="images/002.jpg" alt="poster10">
-                        <img src="images/003.jpg" alt="poster11">
-                        <img src="images/004.jpg" alt="poster12">
-                        <img src="images/005.jpg" alt="poster13">
-                        <img src="images/006.jpg" alt="poster14">
-                    </picture>  
+            </div>
+            <div class="smallTitles">
+                <h5>- 草莓音乐节活动小卡 -</h5>
+            </div>
+
+            <div class="horizontalSwiper hSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/summerTime.png" alt="poster8">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/2.png" alt="poster9"> 
+                    </div>
                 </div>
-                <h5>- 产品画册 - </h5>
+            </div>
+        
+        
+            </picture>  
+            <div class="smallTitles">
+                <h5>- yearbook - </h5>
+            </div>
+            
+            <div class="horizontalSwiper hSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/001.jpg" alt="poster9">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/002.jpg" alt="poster10">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/003.jpg" alt="poster11">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/004.jpg" alt="poster12">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/005.jpg" alt="poster13"> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/006.jpg" alt="poster14">  
+                    </div>
+                    
+                </div>
+            </div>
+           
+            <div class="smallTitles">
+                <h5>- 产品画册 -</h5>
+            </div>  
         </div>
 
         <!-- <div class="typography">
@@ -218,9 +250,9 @@
     </section>
 <!-- projects section --> 
     <section id ="contact-section">
-        <div class="messagesection">
+        <!-- <div class="messagesection">
             <h2>Leave me a message!</h2>
-        </div>
+        </div> -->
 
         <div class="connections">
             <h3>邮箱：zhangymhw@163.com</h3>
@@ -232,7 +264,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-            const swiper = new Swiper(".mySwiper", {
+            const verticalSwiper = new Swiper(".vSwiper", {
             slidesPerView: 1, // Show 1 slide by default
             spaceBetween: 20, // Add space between slides
 
@@ -245,6 +277,21 @@
                 },
             },
         });
+    </script>
+    <script>
+        const horizontalSwiper = new Swiper(".hSwiper", {
+        slidesPerView: 1, // Show 1 slide by default
+        spaceBetween: 20, // Add space between slides
+
+        breakpoints: {
+            768: {
+                slidesPerView: 2, // Show 2 slides on tablets
+            },
+            1024: {
+                slidesPerView: 4, // Show 4 slides on desktop
+            },
+        },
+    });
     </script>
     <script src="main.js"></script>
 
