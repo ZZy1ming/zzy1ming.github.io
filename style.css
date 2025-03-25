@@ -14,7 +14,8 @@ body{
     font-size: 15px;
     line-height: 1.7;
     background: whitesmoke;
-  
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a{
@@ -214,6 +215,16 @@ section:nth-of-type(even) {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.swiper-wrapper{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* 滚动时自动对齐 */
+    width: 100%;
+    gap: 20px; /* 项目间距 */
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch; /* 优化移动端滚动 */
+}
+
 .poster {
     width: 90%;
     height: 90%;
@@ -231,9 +242,18 @@ section:nth-of-type(even) {
 
 /* Swiper Container for horizontal designs*/
 .horizontalSwiper {
-    width: 120%;
+    width: 100%;
     height: 300px; /* Set a fixed height for the Swiper container */
     padding: 20px;
+}
+
+.swiper-wrapper{
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    width: 100%;
+    gap: 20px; 
+    padding: 20px 0;
 }
 
 .swiper-slide {
@@ -259,6 +279,7 @@ section:nth-of-type(even) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 30px;
     padding-bottom: 80px;
 }
 
@@ -306,4 +327,6 @@ section:nth-of-type(even) {
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 97px;
+    width: 100%;
+    overflow-x: hidden;
 }
